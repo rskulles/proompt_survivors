@@ -1,0 +1,18 @@
+# ninja log v6
+1	287	1726435410268248386	CMakeFiles/square_survivors.dir/bullet.cpp.o	9ba965ace69df97
+0	12	1726441241603851579	build.ninja	d63bb28b21564cb1
+1	625	1726439988587673078	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+625	670	1726439989211693384	square_survivors	f9661c2a7d81becc
+1	313	1726440867495250974	CMakeFiles/square_survivors.dir/HighScoreManager.cpp.o	384fa3077ba29fbf
+1	630	1726441424849954626	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+630	675	1726441425478968625	square_survivors	d9d0ea3ad35b8baf
+1	608	1726441437765241975	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+608	653	1726441438372255475	square_survivors	d9d0ea3ad35b8baf
+1	614	1726442087817154892	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+614	659	1726442088430156079	square_survivors	d9d0ea3ad35b8baf
+1	612	1726442337599534040	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+612	657	1726442338210539286	square_survivors	d9d0ea3ad35b8baf
+0	607	1726442881579412191	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+607	653	1726442882185421587	square_survivors	d9d0ea3ad35b8baf
+1	638	1726442893475597128	CMakeFiles/square_survivors.dir/main.cpp.o	8177766589c6fe
+638	683	1726442894112607058	square_survivors	d9d0ea3ad35b8baf

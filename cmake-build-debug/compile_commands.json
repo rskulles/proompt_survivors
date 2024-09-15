@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/rskulles/CLionProjects/square_survivors/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -fdiagnostics-color=always -o CMakeFiles/square_survivors.dir/main.cpp.o -c /home/rskulles/CLionProjects/square_survivors/main.cpp",
+  "file": "/home/rskulles/CLionProjects/square_survivors/main.cpp",
+  "output": "CMakeFiles/square_survivors.dir/main.cpp.o"
+},
+{
+  "directory": "/home/rskulles/CLionProjects/square_survivors/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -fdiagnostics-color=always -o CMakeFiles/square_survivors.dir/HighScoreManager.cpp.o -c /home/rskulles/CLionProjects/square_survivors/HighScoreManager.cpp",
+  "file": "/home/rskulles/CLionProjects/square_survivors/HighScoreManager.cpp",
+  "output": "CMakeFiles/square_survivors.dir/HighScoreManager.cpp.o"
+}
+]
