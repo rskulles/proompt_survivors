@@ -1,0 +1,18 @@
+    # C++ build artifacts
+    *.exe
+    *.o
+    *.obj
+    *.so
+    *.dll
+    *.out
+    /build/
+    *-build-*
+
+    # Editor files
+    .vscode/
+    .idea/
+    *.swp
+    *.swo
+
+    # Mac files
+    .DS_Store
