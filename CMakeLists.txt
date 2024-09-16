@@ -22,8 +22,4 @@ add_executable(square_survivors main.cpp Bullet.h
         HighScoreManager.h
         HighScoreManager.cpp
         Utilities.h)
-target_link_libraries(square_survivors sfml-graphics sfml-window sfml-system)
-
-if (WIN32)
-    target_link_libraries(square_survivors ws2_32 opengl32 freetype jpeg)
-endif ()
+target_link_libraries(square_survivors sfml-graphics-s sfml-window-s sfml-system-s)
