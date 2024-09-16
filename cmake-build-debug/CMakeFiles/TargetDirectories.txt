@@ -1,3 +1,0 @@
-/home/rskulles/CLionProjects/square_survivors/cmake-build-debug/CMakeFiles/square_survivors.dir
-/home/rskulles/CLionProjects/square_survivors/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rskulles/CLionProjects/square_survivors/cmake-build-debug/CMakeFiles/rebuild_cache.dir
