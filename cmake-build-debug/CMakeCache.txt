@@ -242,16 +242,34 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
 
 //Path to a file.
-FREETYPE_INCLUDE_DIR_freetype2:PATH=FREETYPE_INCLUDE_DIR_freetype2-NOTFOUND
-
-//Path to a file.
-FREETYPE_INCLUDE_DIR_ft2build:PATH=FREETYPE_INCLUDE_DIR_ft2build-NOTFOUND
+FLAC_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
-FREETYPE_LIBRARY:FILEPATH=FREETYPE_LIBRARY-NOTFOUND
+FLAC_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libFLAC.so
+
+//Path to a file.
+FREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/include/freetype2
+
+//Path to a file.
+FREETYPE_INCLUDE_DIR_ft2build:PATH=/usr/include/freetype2
+
+//Path to a library.
+FREETYPE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfreetype.so
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
+//Path to a file.
+OGG_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OGG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libogg.so
+
+//Path to a file.
+OPENAL_INCLUDE_DIR:PATH=/usr/include/AL
+
+//Path to a library.
+OPENAL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libopenal.so
 
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
@@ -321,6 +339,10 @@ SFML_BUILD_WINDOW:BOOL=TRUE
 // directory
 SFML_DEPENDENCIES_INSTALL_PREFIX:PATH=.
 
+//TRUE to automatically install pkg-config files so other projects
+// can find SFML
+SFML_INSTALL_PKGCONFIG_FILES:BOOL=TRUE
+
 //Value Computed by CMake
 SFML_IS_TOP_LEVEL:STATIC=OFF
 
@@ -330,6 +352,9 @@ SFML_MISC_INSTALL_PREFIX:PATH=share/SFML
 //TRUE to use an OpenGL ES implementation, FALSE to use a desktop
 // OpenGL implementation
 SFML_OPENGL_ES:BOOL=0
+
+//Install directory for SFML's pkg-config .pc files
+SFML_PKGCONFIG_INSTALL_PREFIX:PATH=/usr/local/lib/pkgconfig
 
 //Value Computed by CMake
 SFML_SOURCE_DIR:STATIC=/home/rskulles/CLionProjects/square_survivors/cmake-build-debug/_deps/sfml-src
@@ -342,6 +367,18 @@ UDEV_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
 UDEV_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libudev.so
+
+//Path to a library.
+VORBISENC_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbisenc.so
+
+//Path to a library.
+VORBISFILE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbisfile.so
+
+//Path to a file.
+VORBIS_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+VORBIS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbis.so
 
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=/usr/include
@@ -749,6 +786,9 @@ X11_xkbfile_INCLUDE_PATH:PATH=X11_xkbfile_INCLUDE_PATH-NOTFOUND
 X11_xkbfile_LIB:FILEPATH=X11_xkbfile_LIB-NOTFOUND
 
 //Dependencies for the target
+sfml-audio_LIB_DEPENDS:STATIC=general;sfml-system;
+
+//Dependencies for the target
 sfml-graphics_LIB_DEPENDS:STATIC=general;sfml-window;
 
 //Dependencies for the target
@@ -880,7 +920,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -925,10 +965,20 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding FLAC
+FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[/usr/lib/x86_64-linux-gnu/libFLAC.so][/usr/include][v()]
+//Details about finding OpenAL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libopenal.so][/usr/include/AL][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
+//Details about finding VORBIS
+FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[/usr/lib/x86_64-linux-gnu/libvorbisenc.so;/usr/lib/x86_64-linux-gnu/libvorbisfile.so;/usr/lib/x86_64-linux-gnu/libvorbis.so;/usr/lib/x86_64-linux-gnu/libogg.so][/usr/include][/usr/include][v()]
 //Details about finding X11
 FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libX11.so][c ][v()]
+//ADVANCED property for variable: FLAC_INCLUDE_DIR
+FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FLAC_LIBRARY
+FLAC_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
 FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build
@@ -937,6 +987,14 @@ FREETYPE_INCLUDE_DIR_ft2build-ADVANCED:INTERNAL=1
 FREETYPE_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGG_INCLUDE_DIR
+OGG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGG_LIBRARY
+OGG_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_INCLUDE_DIR
+OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_LIBRARY
+OPENAL_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLES2_INCLUDE_DIR
@@ -969,6 +1027,14 @@ OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 UDEV_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: UDEV_LIBRARIES
 UDEV_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBISENC_LIBRARY
+VORBISENC_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBISFILE_LIBRARY
+VORBISFILE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBIS_INCLUDE_DIR
+VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBIS_LIBRARY
+VORBIS_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_INCLUDE_PATH
 X11_ICE_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_LIB

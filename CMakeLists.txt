@@ -14,7 +14,6 @@ FetchContent_Declare(
 )
 
 FetchContent_MakeAvailable(SFML)
-set(SFML_STATIC_LIBRARIES TRUE)
 add_definitions(-DSFML_STATIC)
 add_executable(square_survivors main.cpp Bullet.h
         Enemy.h Player.h
@@ -22,4 +21,4 @@ add_executable(square_survivors main.cpp Bullet.h
         HighScoreManager.h
         HighScoreManager.cpp
         Utilities.h)
-target_link_libraries(square_survivors sfml-graphics-s sfml-window-s sfml-system-s)
+target_link_libraries(square_survivors sfml-graphics sfml-window sfml-system)

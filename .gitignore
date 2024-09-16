@@ -6,7 +6,7 @@
     *.dll
     *.out
     /build/
-    *-build-*
+    *build*
 
     # Editor files
     .vscode/

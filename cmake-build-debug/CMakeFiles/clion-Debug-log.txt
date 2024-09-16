@@ -14,10 +14,20 @@ CMake Deprecation Warning at cmake-build-debug/_deps/sfml-src/CMakeLists.txt:5 (
 -- libudev stable: 1
 -- Found UDev: /usr/lib/x86_64-linux-gnu/libudev.so
 --    include: /usr/include
-CMake Error at cmake-build-debug/_deps/sfml-src/cmake/Macros.cmake:296 (message):
-  Missing item in FREETYPE_LIBRARY
+-- Found OpenAL: /usr/lib/x86_64-linux-gnu/libopenal.so
+CMake Warning (dev) at /home/rskulles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (VORBIS)
+  does not match the name of the calling package (Vorbis).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
 Call Stack (most recent call first):
-  cmake-build-debug/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt:137 (sfml_find_package)
+  cmake-build-debug/_deps/sfml-src/cmake/Modules/FindVorbis.cmake:25 (find_package_handle_standard_args)
+  cmake-build-debug/_deps/sfml-src/cmake/Macros.cmake:279 (find_package)
+  cmake-build-debug/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
 
-
--- Configuring incomplete, errors occurred!
+-- Found VORBIS: /usr/lib/x86_64-linux-gnu/libvorbisenc.so;/usr/lib/x86_64-linux-gnu/libvorbisfile.so;/usr/lib/x86_64-linux-gnu/libvorbis.so;/usr/lib/x86_64-linux-gnu/libogg.so
+-- Found FLAC: /usr/lib/x86_64-linux-gnu/libFLAC.so
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rskulles/CLionProjects/square_survivors/cmake-build-debug
