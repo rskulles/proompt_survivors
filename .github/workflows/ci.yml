@@ -2,11 +2,14 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
-  tags:
-    - 'v*.*.*'
+    branches:
+      - main
+  release:
+    types:
+      - created
 
 jobs:
   build:
